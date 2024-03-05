@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Site com Menus</title>
+        
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            header {
+                background-color: #333;
+                color: #fff;
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .top-menu ul,
+            .right-menu ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .top-menu ul li,
+            .right-menu ul li {
+                display: inline-block;
+            }
+
+            .top-menu ul li a,
+            .right-menu ul li a {
+                text-decoration: none;
+                color: #fff;
+                padding: 5px 10px;
+            }
+
+            .top-menu ul li a:hover,
+            .right-menu ul li a:hover {
+                background-color: #555;
+            }
+
+            .main-content {
+                padding: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <nav class="top-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <nav class="right-menu">
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Cadastro</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="content">
+                <h1>Bem-vindo ao Site</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque lacus vitae tincidunt.</p>
+            </div>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

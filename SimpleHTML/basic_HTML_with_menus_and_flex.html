@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Site com Menus</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            header {
+                background-color: #333;
+                color: #fff;
+                padding: 10px;
+            }
+
+            .menu {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .menu ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+            }
+
+            .menu ul li {
+                margin-left: 10px;
+            }
+
+            .menu ul li:first-child {
+                margin-left: 0;
+            }
+
+            .menu ul li a {
+                text-decoration: none;
+                color: #fff;
+                padding: 5px 10px;
+            }
+
+            .menu ul li a:hover {
+                background-color: #555;
+            }
+
+            .content {
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <nav class="menu">
+                <ul class="top-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+                <ul class="right-menu">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Cadastro</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="content">
+            <h1>Bem-vindo ao Site</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque lacus vitae tincidunt.</p>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
