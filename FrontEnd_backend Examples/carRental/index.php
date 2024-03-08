@@ -19,59 +19,7 @@ $fleet = $dal->getAllFleet(3);
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
-
-							<!-- Logo -->
-								<a href="index.php" class="logo">
-									<span class="fa fa-car"></span> <span class="title">CAR RENTAL WEBSITE</span>
-								</a>
-                                                                
-							<!-- Nav -->
-								<nav>
-                                                                        <?php
-                                                                            if(isset($_SESSION["username"])){
-                                                                                echo '<span>welcome user: '
-                                                                                .$_SESSION["username"].
-                                                                                        '</span> | <span><a href="controllers/Login.php">Logout?</a></span>';
-                                                                            }
-                                                                        ?>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
-
-						</div>
-					</header>
-
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.php" class="active">Home</a></li>
-
-                                                        <li><a href="carRental/views/loginRegister.php">Login/Register</a></li>
-                                                        
-							<li><a href="carRental/views/offers.html">Offers</a></li>
-
-							<li><a href="carRental/views/fleet.php">Fleet</a></li>
-
-							<li>
-								<a href="#" class="dropdown-toggle">About</a>
-
-								<ul>
-									<li><a href="carRental/views/about.html">About Us</a></li>
-									<li><a href="carRental/views/team.html">Team</a></li>
-									<li><a href="carRental/views/blog.html">Blog</a></li>
-									<li><a href="carRental/views/testimonials.html">Testimonials</a></li>
-									<li><a href="carRental/views/faq.html">FAQ</a></li>
-									<li><a href="carRental/views/terms.html">Terms</a></li>
-								</ul>
-							</li>
-							<li><a href="carRental/views/contact.html">Contact Us</a></li>
-						</ul>
-					</nav>
+				<?php include ('views/header.html'); ?>
 
 				<!-- Main -->
 					<div id="main">

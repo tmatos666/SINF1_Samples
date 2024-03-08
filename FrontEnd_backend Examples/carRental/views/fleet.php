@@ -43,7 +43,7 @@ $fleet = $dal->getAllFleet('all');
 					<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
-							<li><a href="index.html">Home</a></li>
+							<li><a href="../index.php">Home</a></li>
 
 							<li><a href="offers.html">Offers</a></li>
 
