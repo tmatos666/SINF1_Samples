@@ -1,16 +1,6 @@
 <?php
 
-/*
- * SimpleModal Contact Form
- * http://simplemodal.com
- *
- * Copyright (c) 2013 Eric Martin - http://ericmmartin.com
- *
- * Licensed under the MIT license:
- *   http://www.opensource.org/licenses/mit-license.php
- */
-
-date_default_timezone_set('America/Los_Angeles');
+//date_default_timezone_set('Europe/Lisbon');
 
 // User settings
 $to = "user@yourdomain.com";
@@ -67,8 +57,7 @@ if (empty($action)) {
 			<input type='hidden' name='token' value='" . smcf_token($to) . "'/>
 		</form>
 	</div>
-	<div class='contact-bottom'><a href='http://www.ericmmartin.com/projects/simplemodal/'>Powered by SimpleModal</a></div>
-</div>";
+    </div>";
 
 	echo $output;
 }
@@ -199,5 +188,3 @@ function smcf_validate_email($email) {
 }
 
 exit;
-
-?>
