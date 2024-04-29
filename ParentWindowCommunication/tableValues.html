@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <style>
+            /* Estilos apenas para ilustrar */
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Data de Nascimento</th>
+                    <th>Salário</th>
+                    <th>pick</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="hidden" id="value1" value="1">1</td>
+                    <td>João</td>
+                    <td>01/01/1990</td>
+                    <td>R$ 3000,00</td>
+                    <td><a  name="link1" id="1" href="#">click Me</a></td>
+                </tr>
+                <tr>
+                    <td><input type="hidden" id="value2" value="2">1</td>
+                    <td>Maria</td>
+                    <td>15/05/1985</td>
+                    <td>R$ 3500,00</td>
+                    <td><a name="link2" id="2" href="#">click Me</a></td>
+                   
+                </tr>
+                <tr>
+                    <td><input type="hidden" id="value3" value="3">1</td>
+                    <td>Carlos</td>
+                    <td>10/10/1995</td>
+                    <td>R$ 3200,00</td>
+                    <td><a name="link3" id="3" href="#">click Me</a></td>
+                </tr>
+                <!-- Adicione mais linhas conforme necessário -->
+            </tbody>
+        </table>
+        <script>
+            $('a[name^="link"]').on('click', function () {///Matches those that begin with 'link'
+                $id=this.id; 
+                //alert(this.id);
+            //$("#send-message-parent").on('click', function () {
+                //alert($.trim($("#value1").val()));
+                //if ($.trim($("#value1").val()) != '') {
+                    window.opener.ProcessChildMessage($id);
+                    // $("#value1").val('');
+                    window.close();
+                //}
+            });
+
+        </script>
+
+    </body>
+</html>

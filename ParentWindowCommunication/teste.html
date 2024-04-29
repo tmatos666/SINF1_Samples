@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Passando valores da div popup para um campo de texto</title>
+        <style>
+            /* Estilos apenas para ilustrar */
+            .popup {
+                display: none;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #f9f9f9;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                z-index: 9999;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Div popup -->
+        <div id="myPopup" class="popup">
+            <p>Valor que deseja passar:</p>
+            <input type="text" id="popupValue">
+            <button onclick="passarValor()">Passar Valor</button>
+        </div>
+
+        <!-- Botão para abrir o popup -->
+        <button onclick="abrirPopup()">Abrir Popup</button>
+
+        <!-- Campo de texto onde o valor será passado -->
+        <input type="text" id="campoTexto">
+
+        <script>
+            function abrirPopup() {
+                document.getElementById("myPopup").style.display = "block";
+            }
+
+            function passarValor() {
+                // Obter o valor da div popup
+                var valorPopup = document.getElementById("popupValue").value;
+
+                // Atribuir o valor ao campo de texto na página
+                document.getElementById("campoTexto").value = valorPopup;
+
+                // Fechar o popup
+                document.getElementById("myPopup").style.display = "none";
+            }
+        </script>
+
+    </body>
+</html>

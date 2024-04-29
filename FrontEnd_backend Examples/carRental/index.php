@@ -4,6 +4,8 @@ session_start();
 require_once 'models/Fleet.php';
 $dal = new Fleet();
 $fleet = $dal->getAllFleet(3);
+
+
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -126,7 +128,7 @@ $fleet = $dal->getAllFleet(3);
 										<img src="views/images/other-1-720x480.jpg" alt="" />
 									</span>
 									<a href="fleet.php">
-										<h2><?php echo $row['name']."".$row['model']?></h2>
+										<h2><?php echo $row['name']." ".$row['model']?></h2>
 										
 										<p>price from: <strong> <?php echo $row['price']?></strong> per weekend</p>
 

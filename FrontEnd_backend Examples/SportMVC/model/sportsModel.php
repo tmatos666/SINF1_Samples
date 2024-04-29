@@ -27,6 +27,14 @@ class sportsModel {
     // insert record
     public function insertRecord($obj) {
         try {
+            /*bind_param
+            i - integer
+            d - double
+            s - string
+            b - BLOB
+             * 
+             *              */
+            
             $this->open_db();
             $query = $this->condb->prepare("INSERT INTO sports (category,name) VALUES (?, ?)");
             $query->bind_param("ss", $obj->category, $obj->name);

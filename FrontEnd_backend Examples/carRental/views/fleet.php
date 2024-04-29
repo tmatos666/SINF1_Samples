@@ -1,9 +1,9 @@
 <?php
 session_start();
-
-require_once '../models/Fleet.php';
+require_once '../models/fleet.php';
 $dal = new Fleet();
 $fleet = $dal->getAllFleet('all');
+
 ?>
 
 <!DOCTYPE HTML>
@@ -41,29 +41,29 @@ $fleet = $dal->getAllFleet('all');
 
 				<!-- Menu -->
 					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="../index.php">Home</a></li>
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="../index.php">Home</a></li>
 
-							<li><a href="offers.html">Offers</a></li>
+						<li><a href="offers.html">Offers</a></li>
 
-							<li><a href="fleet.html" class="active">Fleet</a></li>
+						<li><a href="fleet.php">Fleet</a></li>
 
-							<li>
-								<a href="#" class="dropdown-toggle">About</a>
+						<li>
+							<a href="#" class="dropdown-toggle">About</a>
 
-								<ul>
-									<li><a href="about.html">About Us</a></li>
-									<li><a href="team.html">Team</a></li>
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="testimonials.html">Testimonials</a></li>
-									<li><a href="faq.html">FAQ</a></li>
-									<li><a href="terms.html">Terms</a></li>
-								</ul>
-							</li>
-							<li><a href="contact.html">Contact Us</a></li>
-						</ul>
-					</nav>
+							<ul>
+								<li class="active"><a href="about.html">About Us</a></li>
+								<li><a href="team.html">Team</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="testimonials.html">Testimonials</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+								<li><a href="terms.html">Terms</a></li>
+							</ul>
+						</li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</nav>
 
 				<!-- Main -->
 					<div id="main">
@@ -85,7 +85,7 @@ $fleet = $dal->getAllFleet('all');
 										<img src="images/product-1-720x480.jpg" alt="" />
 									</span>
 									<a href="#footer" class="scrolly">
-										<h2><?php echo $row['name']."".$row['model']?></h2>
+										<h2><?php echo $row['name']." ".$row['model']?></h2>
 										
 										<p>price from: <strong> <?php echo $row['price']?></strong> per weekend</p>
 
