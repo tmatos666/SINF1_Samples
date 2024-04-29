@@ -21,7 +21,7 @@ $fleet = $dal->getAllFleet(3);
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<?php include ('views/header.html'); ?>
+				<?php include ('views/header.php'); ?>
 
 				<!-- Main -->
 					<div id="main">
@@ -127,7 +127,7 @@ $fleet = $dal->getAllFleet(3);
 									<span class="image">
 										<img src="views/images/other-1-720x480.jpg" alt="" />
 									</span>
-									<a href="fleet.php">
+									<a href="views/fleet.php">
 										<h2><?php echo $row['name']." ".$row['model']?></h2>
 										
 										<p>price from: <strong> <?php echo $row['price']?></strong> per weekend</p>

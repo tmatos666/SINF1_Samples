@@ -4,8 +4,8 @@ class config
 {	
 	function __construct() {
 		$this->host = "localhost";
-		$this->user  = "root";
-		$this->pass = "root";
+		$this->user  = "sinf1";
+		$this->pass = "1234";
 		$this->db = "sportDB";
 	}
 }
