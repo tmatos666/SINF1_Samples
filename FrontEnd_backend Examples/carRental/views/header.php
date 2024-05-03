@@ -39,7 +39,16 @@ if (str_contains($_SERVER['REQUEST_URI'], "/views/")){
         <ul>
                 <?php
                 if (isset($_SESSION["username"])){?>
-                    <li><a href="controllers/logout.php">Logout</a></li>
+                    <li>
+                        <?php
+                            if($x){
+                                echo "<a href='../controllers/logout.php'>Logout</a>";
+                            } else {
+                                echo "<a href='controllers/logout.php'>Logout</a>";
+                            }
+                        ?>
+                        
+                    </li>
                 <?php }else{?>
                     <li><a href="<?php echo $value;?>loginRegister.php">Login/Register</a></li>
                 <?php }?>    

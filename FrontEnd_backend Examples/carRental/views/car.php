@@ -28,7 +28,7 @@ $fleet = $dal->getCar($_GET['id']);
 
 
                         <h1><?php echo $row['model'] ?></h1>
-                        <span class="image main"><img src="images/product-1-720x480.jpg" alt="" /></span>
+                        <span class="image main car"><img src="images/product-1-720x480.jpg" alt="" /></span>
                         <h2>Name</h2>
                         <p><?php echo $row['model'] ?></p>
                         <h2>Model</h2>
