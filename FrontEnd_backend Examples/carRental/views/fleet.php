@@ -41,7 +41,7 @@ $fleet = $dal->getAllFleet('all');
 									<span class="image">
 										<img src="images/product-1-720x480.jpg" alt="" />
 									</span>
-									<a href="#footer" class="scrolly">
+									<a href="car.php?id=<?php echo $row['id']?>" class="scrolly">
 										<h2><?php echo $row['name']." ".$row['model']?></h2>
 										
 										<p>price from: <strong> <?php echo $row['price']?></strong> per weekend</p>

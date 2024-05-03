@@ -126,7 +126,7 @@ $fleet = $dal->getAllFleet(3);
 									<span class="image">
 										<img src="views/images/other-1-720x480.jpg" alt="" />
 									</span>
-									<a href="views/fleet.php">
+									<a href="views/car.php?id=<?php echo $row['id']?>">
 										<h2><?php echo $row['name']." ".$row['model']?></h2>
 										
 										<p>price from: <strong> <?php echo $row['price']?></strong> per weekend</p>
