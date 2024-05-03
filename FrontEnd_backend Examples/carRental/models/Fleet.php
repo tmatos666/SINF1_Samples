@@ -16,8 +16,7 @@ class Fleet {
         
         #echo $sql;
         $stmt=$this->conn->query($sql);
-
+        $this->conn->close();
         return $stmt;
     }
-
 }

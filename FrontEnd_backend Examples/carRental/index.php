@@ -5,7 +5,6 @@ require_once 'models/Fleet.php';
 $dal = new Fleet();
 $fleet = $dal->getAllFleet(3);
 
-
 ?>
 <!DOCTYPE HTML>
 <html>
