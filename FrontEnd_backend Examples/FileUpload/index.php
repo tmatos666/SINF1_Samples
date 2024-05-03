@@ -33,7 +33,7 @@ require 'phpFunctions.php';
                 </div>
                 <div class="form-group">
                     <label for="foto">Foto:</label>
-                    <input type="file" id="foto" name="foto" multiple="multiple" accept="image/*" required>
+                    <input type="file" id="foto" name="foto[]" multiple="multiple" accept="image/*" required>
                 </div>
                 <button value="Send File" type="submit">Enviar</button>
             </form>

@@ -37,6 +37,12 @@ if (str_contains($_SERVER['REQUEST_URI'], "/views/")){
 <nav id="menu">
         <h2>Menu</h2>
         <ul>
+                <?php
+                if (isset($_SESSION["username"])){?>
+                    <li><a href="controllers/logout.php">Logout</a></li>
+                <?php }else{?>
+                    <li><a href="<?php echo $value;?>loginRegister.php">Login/Register</a></li>
+                <?php }?>    
                 <li>
                     <?php
                             if($x){

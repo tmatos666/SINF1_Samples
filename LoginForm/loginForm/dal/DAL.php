@@ -6,9 +6,9 @@ class DAL {
     //host tipically is the localhost
     private $DB_HOST = 'localhost';
     //database username
-    private $DB_USER = 'root';
+    private $DB_USER = 'sinf1';
     //password for the username metioned 
-    private $DB_PASS = 'root';
+    private $DB_PASS = '1234';
     
     private $link = null;
 
